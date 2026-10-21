@@ -1,0 +1,49 @@
+CORRECTIONS APPORTÉES AUX RECETTES
+==================================
+
+Les textes ont été gardés tels quels, sauf les corrections ci-dessous (erreurs ou oublis
+évidents dans les fichiers d'origine).
+
+QUANTITÉS ET TEMPS
+- Tarte au citron meringuée : 375 cl de lait -> 37,5 cl
+- Colin à la bordelaise : 1050 ml de vin blanc -> 150 ml
+- Selle d'agneau aux haricots blancs : 50 g de tomates -> 500 g
+- Poulet rôti aux petits pois : « 1 h 30 à 1 h 30 » -> « 1 h 15 à 1 h 30 »
+- Endives au saumon fumé : « 10 à 5 min » à la vapeur -> « 10 à 15 min »
+- Andouillettes à la crème de Munster : crème 100 g -> 150 g (comme dans la préparation)
+- Far breton : pruneaux « trempés environ 1/4 d'heure, puis farinés »
+- Flan aux poires fraîches : « le sucre vanillé et 75 g de sucre en poudre »
+- Gratin de potimarron : ajout de la cuisson (180°, 45 min à 1 h), qui manquait
+
+INGRÉDIENTS OUBLIÉS DANS LES LISTES (ajoutés)
+- Pâtisson farci : oignon, viande hachée, thym
+- Carré de porc aux clémentines, Filet mignon aux pruneaux, Râble de lapin : fond de veau
+- Andouillettes à la crème de Munster : pommes de terre, gewurztraminer
+- Saumonette : courgette, aubergine, poivrons, bouquet garni, court-bouillon, huile, citron, beurre
+- Joues de porc confites au cidre (version 2) et Canard aux poires : listes d'ingrédients créées
+- Tarte normande aux amandes : amandes effilées (visibles sur la photo, absentes du texte)
+
+INGRÉDIENTS LISTÉS MAIS JAMAIS UTILISÉS (ajoutés dans la préparation)
+- Lotte à la moutarde : la moutarde est mélangée à la crème
+- Rôti de porc apple sauce, Filet mignon aux pruneaux, Râble de lapin : le vin blanc / cidre
+- Dinde aux marrons (cocotte-minute) : les châtaignes, ajoutées en fin de cuisson
+
+TEXTES COPIÉS D'UNE AUTRE RECETTE
+- Joues de porc au cidre : « joues de bœuf » -> « joues de porc »
+- Endives au saumon fumé : retrait de deux étapes qui parlaient de jambon et de fenouil
+- Râble de lapin aux pruneaux : étape « farcir le râble » complétée
+- Saucisses de Morteau, salade de lentilles : « Morteau (ou Montbéliard) »
+- Pintade aux marrons : la photo de la canette a été retirée (seule la vraie photo est gardée)
+
+AUTRES
+- Gâteau à la crème de marron, variante b : « procéder comme pour la variante a »
+- Blancs de poulet sauce fromage : 4 personnes (4 blancs de poulet)
+- Dorade sébaste au riz ou boulgour : la recette n'a jamais été écrite, seule la photo existe
+- Le fichier « thon rouge en gratin » contenait en réalité le « Dos de cabillaud sauce citronnée »
+
+RECETTES CITÉES DANS LES ANCIENNES TABLES DES MATIÈRES MAIS ABSENTES DU DOSSIER
+(elles n'ont jamais été tapées, ou sont ailleurs sur un autre ordinateur)
+Omelette Surcouf, Fèves aux lardons, Magret de canard aux kiwis et endives, Cassoulet aux
+cuisses de canard, Poulet au calvados et pommes, Andouillettes en gratin au Munster,
+Bœuf mironton (sauce tomate ou blanche), Gratin de pommes de terre aux harengs fumés,
+Thon rouge en gratin.
