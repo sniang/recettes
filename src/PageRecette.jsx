@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Etoiles from './Etoiles.jsx'
 import Telechargements from './Telechargements.jsx'
-import { ordreLivre, photo } from './outils.js'
+import { memoire, ordreLivre, photo } from './outils.js'
 
 function Ingredients({ liste }) {
   // Cases à cocher pour suivre les ingrédients déjà sortis pendant la préparation.
@@ -27,6 +27,21 @@ function Ingredients({ liste }) {
   )
 }
 
+// « Toutes les recettes » revient en arrière quand on vient de la liste, pour que le bouton
+// retour du téléphone et ce lien mènent au même endroit.
+function retourListe(e) {
+  if (memoire.lire('defilement') !== null && window.history.length > 1) {
+    e.preventDefault()
+    window.history.back()
+  }
+}
+
+// Recette précédente / suivante : remplace l'entrée d'historique au lieu d'en empiler une.
+function allerA(e, slug) {
+  e.preventDefault()
+  window.location.replace(`#/recette/${slug}`)
+}
+
 export default function PageRecette({ recette: r }) {
   const i = ordreLivre.findIndex((x) => x.slug === r.slug)
   const prec = ordreLivre[i - 1]
@@ -36,7 +51,7 @@ export default function PageRecette({ recette: r }) {
   return (
     <>
       <nav className="barre">
-        <a href="#/" className="retour">
+        <a href="#/" className="retour" onClick={retourListe}>
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M15 5l-7 7 7 7" />
           </svg>
@@ -58,14 +73,15 @@ export default function PageRecette({ recette: r }) {
         {r.photos.length > 0 && (
           <div className={`photos n${r.photos.length}`}>
             {r.photos.map((p) => (
-              <a key={p.src} href={p.illustration ? p.source : photo(p.src)} target="_blank" rel="noreferrer">
+              <figure key={p.src}>
                 <img src={photo(p.src)} width={p.w} height={p.h} alt={`Photo : ${r.titre}`} />
                 {p.illustration && (
-                  <span className="legende" title={`${p.credit} · ${p.licence} · Wikimedia Commons`}>
+                  <a className="legende" href={p.source} target="_blank" rel="noreferrer"
+                    title={`${p.credit} · ${p.licence} · Wikimedia Commons`}>
                     Photo d’illustration
-                  </span>
+                  </a>
                 )}
-              </a>
+              </figure>
             ))}
           </div>
         )}
@@ -127,7 +143,7 @@ export default function PageRecette({ recette: r }) {
 
         <nav className="suite" aria-label="Recette précédente et suivante">
           {prec ? (
-            <a href={`#/recette/${prec.slug}`}>
+            <a href={`#/recette/${prec.slug}`} onClick={(e) => allerA(e, prec.slug)}>
               <span>← Précédente</span>
               {prec.titre}
             </a>
@@ -135,7 +151,7 @@ export default function PageRecette({ recette: r }) {
             <span />
           )}
           {suiv && (
-            <a href={`#/recette/${suiv.slug}`} className="droite">
+            <a href={`#/recette/${suiv.slug}`} className="droite" onClick={(e) => allerA(e, suiv.slug)}>
               <span>Suivante →</span>
               {suiv.titre}
             </a>

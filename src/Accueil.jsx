@@ -1,25 +1,7 @@
 import { useEffect, useLayoutEffect, useMemo, useState } from 'react'
 import Etoiles from './Etoiles.jsx'
 import Telechargements from './Telechargements.jsx'
-import { categories, correspond, miniature, recettes, regrouper } from './outils.js'
-
-// La recherche, le filtre et la position dans la page sont gardés quand on revient d'une recette.
-const memoire = {
-  lire(cle, defaut) {
-    try {
-      return sessionStorage.getItem(cle) ?? defaut
-    } catch {
-      return defaut
-    }
-  },
-  ecrire(cle, valeur) {
-    try {
-      sessionStorage.setItem(cle, valeur)
-    } catch {
-      /* stockage indisponible : sans importance */
-    }
-  },
-}
+import { categories, correspond, memoire, miniature, recettes, regrouper } from './outils.js'
 
 export default function Accueil() {
   const [recherche, setRecherche] = useState(() => memoire.lire('recherche', ''))
@@ -28,12 +10,15 @@ export default function Accueil() {
   useEffect(() => memoire.ecrire('recherche', recherche), [recherche])
   useEffect(() => memoire.ecrire('filtre', filtre), [filtre])
 
+  // En revenant d'une recette, on retrouve la liste là où on l'avait laissée (et seulement dans ce cas).
   useLayoutEffect(() => {
-    window.scrollTo(0, Number(memoire.lire('defilement', 0)))
-    const garder = () => memoire.ecrire('defilement', String(window.scrollY))
-    window.addEventListener('scroll', garder, { passive: true })
-    return () => window.removeEventListener('scroll', garder)
+    const position = memoire.lire('defilement')
+    if (position !== null) {
+      memoire.retirer('defilement')
+      window.scrollTo(0, Number(position))
+    }
   }, [])
+  const ouvrir = () => memoire.ecrire('defilement', String(window.scrollY))
 
   const resultats = useMemo(
     () => recettes.filter((r) => (!filtre || r.categorie === filtre) && correspond(r, recherche)),
@@ -93,7 +78,7 @@ export default function Accueil() {
                 <ul className="grille">
                   {items.map((r) => (
                     <li key={r.slug}>
-                      <a className="carte" href={`#/recette/${r.slug}`}>
+                      <a className="carte" href={`#/recette/${r.slug}`} onClick={ouvrir}>
                         <div className="carte-image">
                           {r.photos[0] ? (
                             <img src={miniature(r.photos[0].src)} alt="" loading="lazy" />

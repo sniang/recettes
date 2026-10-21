@@ -62,3 +62,28 @@ export function regrouper(liste) {
 
 /** Les recettes dans l'ordre du livre, pour la navigation précédente / suivante. */
 export const ordreLivre = regrouper(recettes).flatMap((c) => c.groupes.flatMap((g) => g.items))
+
+/** Petit stockage de session (recherche, filtre, position) : tout échec est sans conséquence. */
+export const memoire = {
+  lire(cle, defaut = null) {
+    try {
+      return sessionStorage.getItem(cle) ?? defaut
+    } catch {
+      return defaut
+    }
+  },
+  ecrire(cle, valeur) {
+    try {
+      sessionStorage.setItem(cle, valeur)
+    } catch {
+      /* stockage indisponible */
+    }
+  },
+  retirer(cle) {
+    try {
+      sessionStorage.removeItem(cle)
+    } catch {
+      /* stockage indisponible */
+    }
+  },
+}
