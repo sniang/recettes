@@ -1,6 +1,8 @@
-export default function Etoiles({ n }) {
+import { textes } from './i18n.js'
+
+export default function Etoiles({ n, langue }) {
   return (
-    <span className="etoiles" title={`Appréciation de l'auteur : ${n} étoile${n > 1 ? 's' : ''}`}>
+    <span className="etoiles" title={textes(langue).etoiles(n)}>
       {'★'.repeat(n)}
     </span>
   )

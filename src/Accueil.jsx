@@ -1,9 +1,12 @@
 import { useEffect, useLayoutEffect, useMemo, useState } from 'react'
 import Etoiles from './Etoiles.jsx'
+import Langues from './Langues.jsx'
 import Telechargements from './Telechargements.jsx'
-import { categories, correspond, memoire, miniature, recettes, regrouper } from './outils.js'
+import { libelle, lien, textes } from './i18n.js'
+import { categories, correspond, memoire, miniature, regrouper } from './outils.js'
 
-export default function Accueil() {
+export default function Accueil({ recettes, index, langue }) {
+  const t = textes(langue)
   const [recherche, setRecherche] = useState(() => memoire.lire('recherche', ''))
   const [filtre, setFiltre] = useState(() => memoire.lire('filtre', ''))
 
@@ -21,64 +24,66 @@ export default function Accueil() {
   const ouvrir = () => memoire.ecrire('defilement', String(window.scrollY))
 
   const resultats = useMemo(
-    () => recettes.filter((r) => (!filtre || r.categorie === filtre) && correspond(r, recherche)),
-    [recherche, filtre],
+    () => recettes.filter((r) => (!filtre || r.categorie === filtre) && correspond(index, r, recherche)),
+    [recettes, index, recherche, filtre],
   )
-  const sections = useMemo(() => regrouper(resultats), [resultats])
+  const sections = useMemo(() => regrouper(resultats, langue), [resultats, langue])
 
   return (
     <>
       <header className="entete">
         <div className="entete-contenu">
-          <p className="surtitre">Le livre de cuisine</p>
-          <h1>Recettes de la famille Bergogne</h1>
-          <Telechargements />
+          <div className="entete-haut">
+            <p className="surtitre">{t.surtitre}</p>
+            <Langues langue={langue} />
+          </div>
+          <h1>{t.titreSite}</h1>
+          <Telechargements langue={langue} />
         </div>
       </header>
 
       <main className="page">
         <div className="outils">
           <label className="recherche">
-            <span className="visuellement-cache">Rechercher une recette</span>
+            <span className="visuellement-cache">{t.rechercher}</span>
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <circle cx="11" cy="11" r="7" />
               <path d="m20 20-3.5-3.5" />
             </svg>
             <input
               type="search"
-              placeholder="Rechercher : lotte, pommes, crème…"
+              placeholder={t.exempleRecherche}
               value={recherche}
               onChange={(e) => setRecherche(e.target.value)}
             />
           </label>
-          <div className="filtres" role="group" aria-label="Catégories">
+          <div className="filtres" role="group" aria-label={t.categories}>
             <button className={!filtre ? 'actif' : ''} onClick={() => setFiltre('')}>
-              Tout
+              {t.tout}
             </button>
             {categories.map((c) => (
               <button key={c} className={filtre === c ? 'actif' : ''} onClick={() => setFiltre(filtre === c ? '' : c)}>
-                {c}
+                {libelle(langue, c)}
               </button>
             ))}
           </div>
         </div>
 
-        {resultats.length === 0 && (
-          <p className="vide">Aucune recette ne correspond à « {recherche} ».</p>
-        )}
+        {resultats.length === 0 && <p className="vide">{t.aucune(recherche)}</p>}
 
         {sections.map(({ categorie, groupes }) => (
           <section key={categorie} className="categorie">
             <h2>
-              {categorie} <span className="compte">{groupes.reduce((n, g) => n + g.items.length, 0)}</span>
+              {libelle(langue, categorie)}{' '}
+              <span className="compte">{groupes.reduce((n, g) => n + g.items.length, 0)}</span>
             </h2>
             {groupes.map(({ groupe, items }) => (
               <div key={groupe} className="groupe">
-                {groupes.length > 1 && <h3>{groupe}</h3>}
+                {groupes.length > 1 && <h3>{libelle(langue, groupe)}</h3>}
                 <ul className="grille">
                   {items.map((r) => (
                     <li key={r.slug}>
-                      <a className="carte" href={`#/recette/${r.slug}`} onClick={ouvrir}>
+                      <a className="carte" href={lien(langue, r.slug)} onClick={ouvrir}>
                         <div className="carte-image">
                           {r.photos[0] ? (
                             <img src={miniature(r.photos[0].src)} alt="" loading="lazy" />
@@ -90,7 +95,7 @@ export default function Accueil() {
                         </div>
                         <div className="carte-texte">
                           <span className="carte-titre">{r.titre}</span>
-                          {r.etoiles > 0 && <Etoiles n={r.etoiles} />}
+                          {r.etoiles > 0 && <Etoiles n={r.etoiles} langue={langue} />}
                         </div>
                       </a>
                     </li>
@@ -103,7 +108,7 @@ export default function Accueil() {
       </main>
 
       <footer className="pied">
-        <p>Les températures et les temps de cuisson peuvent varier en fonction du type ou de la marque des cuisinières !</p>
+        <p>{t.note}</p>
       </footer>
     </>
   )

@@ -86,8 +86,46 @@ svg {
   padding: 56px 16px 36px;
 }
 
+.entete-haut {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.langues {
+  display: inline-flex;
+  flex: none;
+  padding: 3px;
+  border: 1px solid var(--bord);
+  border-radius: 999px;
+  background: var(--surface);
+}
+
+.langues a {
+  padding: 3px 10px;
+  border-radius: 999px;
+  font: 600 0.8rem var(--corps);
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  color: var(--doux);
+}
+
+.langues a.actif {
+  background: var(--accent);
+  color: var(--fond);
+}
+
+.chargement {
+  margin: 30vh 0;
+  text-align: center;
+  color: var(--doux);
+  font-style: italic;
+}
+
 .surtitre {
-  margin: 0 0 8px;
+  margin: 0;
   color: var(--accent);
   font-style: italic;
   letter-spacing: 0.02em;
@@ -360,6 +398,8 @@ svg {
 }
 
 .barre-titre {
+  flex: 1;
+  text-align: right;
   font: italic 0.92rem var(--corps);
   color: var(--doux);
   white-space: nowrap;
