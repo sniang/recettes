@@ -16,6 +16,18 @@ Site : https://sniang.github.io/recettes/
 - `scripts/prepare-downloads.mjs` : copie le PDF et fabrique l'archive ZIP du dossier `livre/`
   proposés en téléchargement sur le site (dans `public/telechargements/`, non versionné).
 
+## Ajouter ou corriger une recette
+
+1. Modifier `src/data/recettes.json` (et les traductions `recettes.en.json` / `recettes.it.json`),
+   et déposer les photos dans `public/photos/` (1000 px) et `public/photos/mini/` (420 px).
+   Le dossier `nouvelles-recettes/` (non versionné) sert à déposer les fichiers reçus.
+2. Regénérer le livre (PDF, Word, un fichier par recette) dans `livre/` :
+
+```bash
+python3 -m venv .venv && .venv/bin/pip install -r outils/requirements.txt
+.venv/bin/python outils/livre.py
+```
+
 ## Lancer le site en local
 
 ```bash

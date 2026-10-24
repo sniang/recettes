@@ -29,3 +29,9 @@ src/data/telechargements.json
 
 # Fichiers verrous de Word / Office ouverts dans livre/
 ~$*
+
+# Fichiers de recettes reçus, à intégrer
+nouvelles-recettes/
+
+# Environnement Python du générateur du livre
+.venv/

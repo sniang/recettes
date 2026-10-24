@@ -9,9 +9,13 @@ import { creerIndex, recettesFr, traduire } from './outils.js'
 function lireRoute() {
   const m = window.location.hash.match(/^#\/(?:(en|it)(?:\/|$))?(?:recette\/([^?/]+))?/)
   const langue = m?.[1] && LANGUES.includes(m[1]) ? m[1] : 'fr'
-  const slug = m?.[2] ? decodeURIComponent(m[2]) : null
+  const brut = m?.[2] ? decodeURIComponent(m[2]) : null
+  const slug = ANCIENS_SLUGS[brut] || brut
   return { langue, slug }
 }
+
+// Anciennes adresses de recettes renommées, pour que les liens déjà partagés marchent encore.
+const ANCIENS_SLUGS = { 'gratin-de-raie': 'joues-de-raie-en-gratin' }
 
 const cache = { fr: recettesFr }
 

@@ -5483,35 +5483,6 @@
   ],
   "notes": []
  },
- "gratin-de-raie": {
-  "titre": "Skate gratin",
-  "personnes": "4 people",
-  "intro": null,
-  "parties": [
-   {
-    "nom": null,
-    "ingredients": [
-     "800 g skate",
-     "150 g grated Gruyère",
-     "4 shallots",
-     "1 garlic clove",
-     "1 piece of stale bread or some croutons",
-     "40 cl whole liquid crème fraîche",
-     "Salt, pepper"
-    ],
-    "etapes": [
-     "Wash and wipe the skate.",
-     "Cook the skate by covering it with cold water, bring to a simmer, cover, turn off the heat and leave to cook for about ten minutes.",
-     "Drain the skate and remove the cartilage.",
-     "Mix the cream with the sliced shallots and garlic. Season with salt and pepper.",
-     "Coat a dish with a little sauce and sprinkle with a little grated Gruyère. Lay the pieces of skate on top. Spread the toasted bread cubes or croutons over them.",
-     "Cover with the rest of the sauce and sprinkle with the rest of the grated Gruyère.",
-     "Put in a hot fan oven, 2nd shelf, 210° (gas mark 7), cook for about fifteen minutes and serve quickly on warm plates."
-    ]
-   }
-  ],
-  "notes": []
- },
  "joues-de-raie-en-persillade": {
   "titre": "Skate cheeks with persillade",
   "personnes": null,
@@ -6023,6 +5994,128 @@
   ],
   "notes": [
    "Offer the rice separately: the portions of fish being fairly generous."
+  ]
+ },
+ "joues-de-raie-en-gratin": {
+  "titre": "Skate cheeks au gratin",
+  "personnes": "4 people",
+  "intro": null,
+  "parties": [
+   {
+    "nom": null,
+    "ingredients": [
+     "800 g skate cheeks",
+     "150 g grated Gruyère",
+     "4 shallots",
+     "1 garlic clove",
+     "1 piece of stale bread or some croutons",
+     "40 cl whole liquid crème fraîche",
+     "Salt, pepper"
+    ],
+    "etapes": [
+     "Wash and wipe the skate cheeks.",
+     "Cook the skate cheeks by covering them with cold water, bring to a simmer, cover, turn off the heat and leave to cook for about ten minutes.",
+     "Drain the skate cheeks and remove the cartilage.",
+     "Mix the cream with the sliced shallots and garlic. Season with salt and pepper.",
+     "Coat a dish with a little sauce and sprinkle with a little grated Gruyère. Lay the skate cheeks on top. Spread the toasted bread cubes or croutons over them.",
+     "Cover with the rest of the sauce and sprinkle with the rest of the grated Gruyère.",
+     "Put in a hot fan oven, 2nd shelf, 210° (gas mark 7), cook for about fifteen minutes and serve quickly on warm plates."
+    ]
+   }
+  ],
+  "notes": []
+ },
+ "poulet-au-champagne-et-au-chaource": {
+  "titre": "Chicken with champagne and Chaource",
+  "personnes": "2 people",
+  "intro": null,
+  "parties": [
+   {
+    "nom": null,
+    "ingredients": [
+     "2 chicken thighs",
+     "300 g potatoes",
+     "1 large onion",
+     "100 g Chaource",
+     "1 tbsp oil",
+     "15 g butter",
+     "10 cl single cream",
+     "5 cl veal stock",
+     "¼ l champagne",
+     "Salt, pepper"
+    ],
+    "etapes": [
+     "Boil the potatoes in their skins. Peel them, cut them into cubes and brown them in butter.",
+     "Brown the chicken thighs and the onions in the oil in the pressure cooker with ¼ litre of champagne. Cook for 10 min.",
+     "Dice the Chaource. Melt the cream and the cheese over a low heat; once melted, add the veal stock, season if needed and set aside.",
+     "Serve the chicken thighs and the potatoes coated with the sauce."
+    ]
+   }
+  ],
+  "notes": [
+   "A salad is always welcome alongside.",
+   "Note: if you replace the champagne with a dry white wine, it’s less (festive) but it’s also very good."
+  ]
+ },
+ "farfalles-au-jambon-cru": {
+  "titre": "Farfalle with cured ham",
+  "personnes": "2 people",
+  "intro": null,
+  "parties": [
+   {
+    "nom": null,
+    "ingredients": [
+     "150 g Beaufort",
+     "150 g Savoy ham",
+     "20 cl crème fraîche",
+     "1 glass of Savoy white wine",
+     "2 medium onions",
+     "300 g farfalle",
+     "A little neutral oil",
+     "Salt, pepper, nutmeg"
+    ],
+    "etapes": [
+     "Cut the Savoy ham into thin strips.",
+     "Peel the onion and cut it into eight. Fry it in a little neutral oil over a medium heat until translucent.",
+     "Add the Savoy ham, then the Savoy white wine and the crème fraîche. Cook over a medium heat for 5 minutes.",
+     "Take off the heat and season (salt, pepper, grated nutmeg).",
+     "Meanwhile, cook the farfalle al dente. When cooked, put them in a gratin dish. Pour the sauce over them and stir.",
+     "Cover with grated Beaufort and brown for about 10 minutes in a hot oven."
+    ]
+   }
+  ],
+  "notes": []
+ },
+ "ragout-limousin": {
+  "titre": "Limousin-style stew",
+  "personnes": "4 people",
+  "intro": null,
+  "parties": [
+   {
+    "nom": null,
+    "ingredients": [
+     "500 g pork shoulder (échine)",
+     "6 carrots",
+     "1 sweet onion, sliced",
+     "200 g artisanal green olives, slightly bitter",
+     "300 g button mushrooms",
+     "1 tin of chestnuts",
+     "Herbes de Provence",
+     "Olive oil",
+     "White wine (or chicken stock)",
+     "Salt, pepper"
+    ],
+    "etapes": [
+     "Cut the pork into 2 cm cubes and brown them in a casserole with olive oil until the pieces are nicely golden.",
+     "Add the sliced onion, the carrots cut into rounds, the mushrooms, the olives and the herbes de Provence.",
+     "Pour in white wine (or chicken stock) to cover everything.",
+     "Season with salt and pepper and simmer over a low heat for 1 h 30 to 3 h (if you have a real wood fire!!).",
+     "5 min before the end of cooking, add the tinned chestnuts."
+    ]
+   }
+  ],
+  "notes": [
+   "In a pressure cooker: 40 minutes."
   ]
  }
 }

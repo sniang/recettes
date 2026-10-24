@@ -5483,35 +5483,6 @@
   ],
   "notes": []
  },
- "gratin-de-raie": {
-  "titre": "Gratin di razza",
-  "personnes": "4 persone",
-  "intro": null,
-  "parties": [
-   {
-    "nom": null,
-    "ingredients": [
-     "800 g di razza",
-     "150 g di groviera grattugiato",
-     "4 scalogni",
-     "1 spicchio d'aglio",
-     "1 pezzo di pane raffermo o dei crostini",
-     "40 cl di crème fraîche intera liquida",
-     "Sale, pepe"
-    ],
-    "etapes": [
-     "Lavare e asciugare la razza.",
-     "Cuocere la razza coprendola di acqua fredda, portare a fremere, coprire, spegnere il fuoco e lasciar cuocere una decina di minuti.",
-     "Scolare la razza e togliere le cartilagini.",
-     "Mescolare la panna con gli scalogni e l'aglio affettati. Salare, pepare.",
-     "Velare una pirofila con un po' di salsa, cospargere con un po' di groviera grattugiato. Adagiarvi i pezzi di razza. Sopra, distribuire i cubetti di pane tostato o i crostini.",
-     "Ricoprire questa preparazione con il resto della salsa, cospargere con il resto del groviera grattugiato.",
-     "Mettere in forno caldo ventilato, 2° ripiano, 210° (term. 7), cuocere una quindicina di minuti e servire rapidamente su piatti caldi."
-    ]
-   }
-  ],
-  "notes": []
- },
  "joues-de-raie-en-persillade": {
   "titre": "Guance di razza in persillade",
   "personnes": null,
@@ -6023,6 +5994,128 @@
   ],
   "notes": [
    "Proporre il riso a parte: le porzioni di pesce sono piuttosto abbondanti."
+  ]
+ },
+ "joues-de-raie-en-gratin": {
+  "titre": "Guance di razza gratinate",
+  "personnes": "4 persone",
+  "intro": null,
+  "parties": [
+   {
+    "nom": null,
+    "ingredients": [
+     "800 g di guance di razza",
+     "150 g di groviera grattugiato",
+     "4 scalogni",
+     "1 spicchio d'aglio",
+     "1 pezzo di pane raffermo o dei crostini",
+     "40 cl di crème fraîche intera liquida",
+     "Sale, pepe"
+    ],
+    "etapes": [
+     "Lavare e asciugare le guance di razza.",
+     "Cuocere le guance di razza coprendole di acqua fredda, portare a fremere, coprire, spegnere il fuoco e lasciar cuocere una decina di minuti.",
+     "Scolare le guance di razza e togliere le cartilagini.",
+     "Mescolare la panna con gli scalogni e l'aglio affettati. Salare, pepare.",
+     "Velare una pirofila con un po' di salsa, cospargere con un po' di groviera grattugiato. Adagiarvi le guance di razza. Sopra, distribuire i cubetti di pane tostato o i crostini.",
+     "Ricoprire questa preparazione con il resto della salsa, cospargere con il resto del groviera grattugiato.",
+     "Mettere in forno caldo ventilato, 2° ripiano, 210° (term. 7), cuocere una quindicina di minuti e servire rapidamente su piatti caldi."
+    ]
+   }
+  ],
+  "notes": []
+ },
+ "poulet-au-champagne-et-au-chaource": {
+  "titre": "Pollo allo champagne e Chaource",
+  "personnes": "2 persone",
+  "intro": null,
+  "parties": [
+   {
+    "nom": null,
+    "ingredients": [
+     "2 sovracosce di pollo",
+     "300 g di patate",
+     "1 cipolla grande",
+     "100 g di Chaource",
+     "1 cucchiaio d’olio",
+     "15 g di burro",
+     "10 cl di panna liquida",
+     "5 cl di fondo di vitello",
+     "¼ l di champagne",
+     "Sale, pepe"
+    ],
+    "etapes": [
+     "Cuocere le patate con la buccia. Sbucciarle, tagliarle a cubetti e farle dorare nel burro.",
+     "Far dorare nell’olio le sovracosce e le cipolle nella pentola a pressione con ¼ di litro di champagne. Cuocere 10 min.",
+     "Tagliare lo Chaource a dadini. Far sciogliere la panna e i dadini a fuoco dolce; una volta sciolto, aggiungere il fondo di vitello e aggiustare di sale se necessario, tenere da parte.",
+     "Servire le sovracosce e le patate nappate con la salsa."
+    ]
+   }
+  ],
+  "notes": [
+   "Un’insalata è sempre benvenuta.",
+   "Nota: se si sostituisce lo champagne con un vino bianco secco, è meno (festa) ma è buonissimo lo stesso."
+  ]
+ },
+ "farfalles-au-jambon-cru": {
+  "titre": "Farfalle al prosciutto crudo",
+  "personnes": "2 persone",
+  "intro": null,
+  "parties": [
+   {
+    "nom": null,
+    "ingredients": [
+     "150 g di Beaufort",
+     "150 g di prosciutto di Savoia",
+     "20 cl di crème fraîche",
+     "1 bicchiere di vino bianco di Savoia",
+     "2 cipolle medie",
+     "300 g di farfalle",
+     "Un po’ d’olio di semi",
+     "Sale, pepe, noce moscata"
+    ],
+    "etapes": [
+     "Tagliate il prosciutto di Savoia a striscioline sottili.",
+     "Sbucciate la cipolla e tagliatela in otto. Fatela rosolare in un po’ d’olio di semi a fuoco medio finché diventa traslucida.",
+     "Aggiungete il prosciutto, poi il vino bianco di Savoia e la crème fraîche. Lasciate cuocere a fuoco medio per 5 minuti.",
+     "Togliete dal fuoco e condite (sale, pepe, noce moscata grattugiata).",
+     "Nel frattempo, cuocete le farfalle al dente. Quando sono cotte, disponetele in una pirofila. Versateci sopra la salsa e mescolate.",
+     "Ricoprite con il Beaufort grattugiato e fate gratinare circa 10 minuti in forno caldo."
+    ]
+   }
+  ],
+  "notes": []
+ },
+ "ragout-limousin": {
+  "titre": "Spezzatino alla limosina",
+  "personnes": "4 persone",
+  "intro": null,
+  "parties": [
+   {
+    "nom": null,
+    "ingredients": [
+     "500 g di coppa di maiale",
+     "6 carote",
+     "1 cipolla dolce affettata",
+     "200 g di olive verdi artigianali, leggermente amare",
+     "300 g di champignon",
+     "1 scatola di castagne",
+     "Erbe di Provenza",
+     "Olio d’oliva",
+     "Vino bianco (o brodo di gallina)",
+     "Sale, pepe"
+    ],
+    "etapes": [
+     "Tagliare il maiale a cubetti di 2 cm e farlo rosolare in una casseruola con olio d’oliva finché i pezzi sono ben dorati.",
+     "Aggiungere la cipolla affettata, le carote a rondelle, i funghi, le olive e le erbe di Provenza.",
+     "Bagnare con vino bianco (o brodo di gallina) fino a coprire il tutto.",
+     "Salare, pepare e far sobbollire a fuoco dolce da 1 h 30 a 3 h (se si dispone di un vero fuoco a legna!!).",
+     "5 min prima della fine della cottura, aggiungere le castagne in scatola."
+    ]
+   }
+  ],
+  "notes": [
+   "In pentola a pressione: 40 minuti."
   ]
  }
 }

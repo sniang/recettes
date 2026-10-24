@@ -47,3 +47,13 @@ Omelette Surcouf, Fèves aux lardons, Magret de canard aux kiwis et endives, Cas
 cuisses de canard, Poulet au calvados et pommes, Andouillettes en gratin au Munster,
 Bœuf mironton (sauce tomate ou blanche), Gratin de pommes de terre aux harengs fumés,
 Thon rouge en gratin.
+
+
+MISE À JOUR DU 24 OCTOBRE 2026
+- « Gratin de raie » devient « Joues de raie en gratin » : correction de l'auteur, ce sont des
+  joues de raie en gratin et non un gratin de raie.
+- Nouvelles recettes : Poulet au champagne et au chaource, Farfalles au jambon cru, Ragoût limousin.
+- Ingrédients utilisés mais absents des listes, ajoutés : ¼ l de champagne (poulet au chaource),
+  un peu d'huile neutre (farfalles), huile d'olive, vin blanc ou bouillon, sel et poivre (ragoût).
+- Ragoût limousin : le fichier reçu était abîmé, sa photo n'a pas pu être récupérée.
+- Filet de canette aux endives : le fichier renvoyé est identique à la version déjà dans le livre.

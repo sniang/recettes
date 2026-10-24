@@ -8085,8 +8085,8 @@
    "coupures": []
   },
   {
-   "slug": "gratin-de-raie",
-   "titre": "Gratin de raie",
+   "slug": "joues-de-raie-en-gratin",
+   "titre": "Joues de raie en gratin",
    "categorie": "Poissons et fruits de mer",
    "groupe": "Raie",
    "personnes": "4 personnes",
@@ -8096,7 +8096,7 @@
     {
      "nom": null,
      "ingredients": [
-      "800 g de raie",
+      "800 g de joues de raie",
       "150 g de gruyère râpé",
       "4 échalotes",
       "1 gousse d’ail",
@@ -8105,11 +8105,11 @@
       "Sel, poivre"
      ],
      "etapes": [
-      "Laver et essuyer la raie.",
-      "Faire cuire la raie en la recouvrant d’eau froide, amener à frémissement, couvrir, arrêter le chauffage et laisser cuire une dizaine de minutes.",
-      "Égoutter la raie et enlever les cartilages.",
+      "Laver et essuyer les joues de raie.",
+      "Faire cuire les joues de raie en les recouvrant d’eau froide, amener à frémissement, couvrir, arrêter le chauffage et laisser cuire une dizaine de minutes.",
+      "Égoutter les joues de raie et enlever les cartilages.",
       "Mélanger la crème avec les échalotes et l’ail émincés. Saler, poivrer.",
-      "Napper un plat avec un peu de sauce, saupoudrer un peu de gruyère râpé. Poser les morceaux de raie. Dessus, répartir les cubes de pain grillé ou croûtons.",
+      "Napper un plat avec un peu de sauce, saupoudrer un peu de gruyère râpé. Poser les joues de raie. Dessus, répartir les cubes de pain grillé ou croûtons.",
       "Recouvrir cette préparation avec le reste de la sauce, saupoudrer le reste du gruyère râpé.",
       "Mettre à four chaud chaleur brassée 2ème niveau 210° (th. 7), faire cuire une quinzaine de minutes et servir rapidement sur assiettes chaudes."
      ]
@@ -8118,12 +8118,12 @@
    "notes": [],
    "photos": [
     {
-     "src": "gratin-de-raie-1.jpg",
+     "src": "joues-de-raie-en-gratin-1.jpg",
      "w": 1000,
      "h": 665
     },
     {
-     "src": "gratin-de-raie-2.jpg",
+     "src": "joues-de-raie-en-gratin-2.jpg",
      "w": 1000,
      "h": 665
     }
@@ -8883,6 +8883,129 @@
      "h": 750
     }
    ],
+   "coupures": []
+  },
+  {
+   "slug": "poulet-au-champagne-et-au-chaource",
+   "titre": "Poulet au champagne et au chaource",
+   "categorie": "Viandes",
+   "groupe": "Poulet",
+   "personnes": "2 personnes",
+   "etoiles": 0,
+   "intro": null,
+   "parties": [
+    {
+     "nom": null,
+     "ingredients": [
+      "2 hauts de cuisse",
+      "300 g de pommes de terre",
+      "1 gros oignon",
+      "100 g de chaource",
+      "1 c. à soupe d’huile",
+      "15 g de beurre",
+      "10 cl de crème liquide",
+      "5 cl de fond de veau",
+      "¼ l de champagne",
+      "Sel, poivre"
+     ],
+     "etapes": [
+      "Faire cuire les pommes de terre en robe des champs. Les éplucher, les couper en cubes et les faire dorer au beurre.",
+      "Faire dorer dans l’huile les hauts de cuisse et les oignons dans la cocotte-minute avec ¼ de litre de champagne. Faire cuire 10 min.",
+      "Tailler le chaource en dés. Mettre la crème et les dés à fondre à feu doux ; une fois fondu, ajouter le fond de veau et assaisonner si nécessaire, réserver.",
+      "Servir les cuisses et les pommes de terre nappées de la sauce."
+     ]
+    }
+   ],
+   "notes": [
+    "Une salade peut être la bienvenue.",
+    "Nota : si l’on remplace le champagne par un vin blanc sec, c’est moins (fête) mais c’est aussi très bon."
+   ],
+   "photos": [
+    {
+     "src": "poulet-au-champagne-et-au-chaource-1.jpg",
+     "w": 1000,
+     "h": 665
+    }
+   ],
+   "coupures": []
+  },
+  {
+   "slug": "farfalles-au-jambon-cru",
+   "titre": "Farfalles au jambon cru",
+   "categorie": "Viandes",
+   "groupe": "Porc",
+   "personnes": "2 personnes",
+   "etoiles": 0,
+   "intro": null,
+   "parties": [
+    {
+     "nom": null,
+     "ingredients": [
+      "150 g de beaufort",
+      "150 g de jambon de Savoie",
+      "20 cl de crème fraîche",
+      "1 verre de vin blanc de Savoie",
+      "2 oignons moyens",
+      "300 g de farfalle",
+      "Un peu d’huile neutre",
+      "Sel, poivre, noix de muscade"
+     ],
+     "etapes": [
+      "Coupez le jambon de Savoie en fines lanières.",
+      "Pelez et coupez en huit l’oignon. Le faire revenir dans un peu d’huile neutre à feu moyen jusqu’à ce qu’il soit translucide.",
+      "Ajoutez le jambon de Savoie puis le vin blanc de Savoie et la crème fraîche. Laissez cuire à feu moyen pendant 5 minutes.",
+      "Enlevez du feu et assaisonnez (sel, poivre, noix de muscade râpée).",
+      "Pendant ce temps, faites cuire les farfalle al dente. Lorsqu’elles sont cuites, disposez-les dans un plat à gratin. Versez dessus la sauce et remuez.",
+      "Recouvrez de beaufort râpé et faites gratiner environ 10 minutes à four chaud."
+     ]
+    }
+   ],
+   "notes": [],
+   "photos": [
+    {
+     "src": "farfalles-au-jambon-cru-1.jpg",
+     "w": 1000,
+     "h": 665
+    }
+   ],
+   "coupures": []
+  },
+  {
+   "slug": "ragout-limousin",
+   "titre": "Ragoût limousin",
+   "categorie": "Viandes",
+   "groupe": "Porc",
+   "personnes": "4 personnes",
+   "etoiles": 3,
+   "intro": null,
+   "parties": [
+    {
+     "nom": null,
+     "ingredients": [
+      "500 g de porc dans l’échine",
+      "6 carottes",
+      "1 oignon doux émincé",
+      "200 g d’olives vertes artisanales et légèrement amères",
+      "300 g de champignons de Paris",
+      "1 boîte de marrons",
+      "Herbes de Provence",
+      "Huile d’olive",
+      "Vin blanc (ou bouillon de poule)",
+      "Sel, poivre"
+     ],
+     "etapes": [
+      "Découper le porc en cubes de 2 cm et le faire revenir dans une cocotte avec de l’huile d’olive jusqu’à ce que les morceaux soient bien dorés.",
+      "Ajouter l’oignon émincé, les carottes coupées en rondelles, les champignons, les olives et les herbes de Provence.",
+      "Mouiller avec du vin blanc (ou un bouillon de poule) pour recouvrir le tout.",
+      "Saler, poivrer et faire mijoter à feu doux de 1 h 30 à 3 h (si disposition d’un vrai feu !!).",
+      "5 min avant la fin de la cuisson, ajouter les marrons en boîte."
+     ]
+    }
+   ],
+   "notes": [
+    "En cocotte-minute : 40 minutes."
+   ],
+   "photos": [],
    "coupures": []
   }
  ]
