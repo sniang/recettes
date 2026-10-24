@@ -9007,6 +9007,51 @@
    ],
    "photos": [],
    "coupures": []
+  },
+  {
+   "slug": "gratin-de-pommes-de-terre-au-hareng-fume",
+   "titre": "Gratin de pommes de terre au hareng fumé",
+   "categorie": "Poissons et fruits de mer",
+   "groupe": "Hareng",
+   "personnes": "2 personnes",
+   "etoiles": 0,
+   "intro": null,
+   "parties": [
+    {
+     "nom": null,
+     "ingredients": [
+      "450 g de pommes de terre",
+      "200 g de hareng fumé",
+      "20 cl de crème liquide",
+      "4 oignons",
+      "Un peu de matière grasse",
+      "Quelques morceaux de beurre",
+      "Sel, poivre"
+     ],
+     "etapes": [
+      "Éplucher et détailler les oignons, puis les faire compoter avec un peu de matière grasse.",
+      "Éplucher à leur tour les pommes de terre, les couper en tranches d’environ 1,5 cm et les cuire à la vapeur.",
+      "Enfin, disposer dans un plat allant au four la moitié des pommes de terre, puis le hareng fumé coupé en petits morceaux, recouvrir avec la compotée d’oignons et finir avec le reste des pommes de terre.",
+      "Poivrer et saler légèrement. Verser la crème fraîche liquide.",
+      "Parsemer de petits morceaux de beurre le dessus des pommes de terre pour les faire gratiner.",
+      "Enfourner au four chaud à 200° pour 20 min environ."
+     ]
+    }
+   ],
+   "notes": [],
+   "photos": [
+    {
+     "src": "gratin-de-pommes-de-terre-au-hareng-fume-1.jpg",
+     "w": 660,
+     "h": 435
+    },
+    {
+     "src": "gratin-de-pommes-de-terre-au-hareng-fume-2.jpg",
+     "w": 660,
+     "h": 432
+    }
+   ],
+   "coupures": []
   }
  ]
 }

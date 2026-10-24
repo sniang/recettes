@@ -6117,5 +6117,33 @@
   "notes": [
    "In pentola a pressione: 40 minuti."
   ]
+ },
+ "gratin-de-pommes-de-terre-au-hareng-fume": {
+  "titre": "Gratin di patate all’aringa affumicata",
+  "personnes": "2 persone",
+  "intro": null,
+  "parties": [
+   {
+    "nom": null,
+    "ingredients": [
+     "450 g di patate",
+     "200 g di aringa affumicata",
+     "20 cl di panna liquida",
+     "4 cipolle",
+     "Un po’ di grasso per cuocere",
+     "Qualche fiocchetto di burro",
+     "Sale, pepe"
+    ],
+    "etapes": [
+     "Sbucciare e affettare le cipolle, poi farle stufare con un po’ di grasso.",
+     "Sbucciare a loro volta le patate, tagliarle a fette di circa 1,5 cm e cuocerle a vapore.",
+     "Infine, disporre in una pirofila metà delle patate, poi l’aringa affumicata tagliata a pezzetti, ricoprire con le cipolle stufate e finire con il resto delle patate.",
+     "Pepare e salare leggermente. Versare la panna liquida.",
+     "Cospargere la superficie delle patate con fiocchetti di burro per farle gratinare.",
+     "Infornare in forno caldo a 200° per circa 20 min."
+    ]
+   }
+  ],
+  "notes": []
  }
 }

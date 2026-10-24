@@ -45,8 +45,7 @@ RECETTES CITÉES DANS LES ANCIENNES TABLES DES MATIÈRES MAIS ABSENTES DU DOSSIE
 (elles n'ont jamais été tapées, ou sont ailleurs sur un autre ordinateur)
 Omelette Surcouf, Fèves aux lardons, Magret de canard aux kiwis et endives, Cassoulet aux
 cuisses de canard, Poulet au calvados et pommes, Andouillettes en gratin au Munster,
-Bœuf mironton (sauce tomate ou blanche), Gratin de pommes de terre aux harengs fumés,
-Thon rouge en gratin.
+Bœuf mironton (sauce tomate ou blanche), Thon rouge en gratin.
 
 
 MISE À JOUR DU 24 OCTOBRE 2026
@@ -57,3 +56,6 @@ MISE À JOUR DU 24 OCTOBRE 2026
   un peu d'huile neutre (farfalles), huile d'olive, vin blanc ou bouillon, sel et poivre (ragoût).
 - Ragoût limousin : le fichier reçu était abîmé, sa photo n'a pas pu être récupérée.
 - Filet de canette aux endives : le fichier renvoyé est identique à la version déjà dans le livre.
+- Nouvelle recette : Gratin de pommes de terre au hareng fumé (fiche scannée, retapée ; ses deux
+  photos ont été découpées dans la fiche). La phrase inachevée « Parsemer de petits morceaux de
+  beurre le dessus des p de t pour » a été complétée par « pour les faire gratiner ».

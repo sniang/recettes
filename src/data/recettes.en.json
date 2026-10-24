@@ -6117,5 +6117,33 @@
   "notes": [
    "In a pressure cooker: 40 minutes."
   ]
+ },
+ "gratin-de-pommes-de-terre-au-hareng-fume": {
+  "titre": "Potato gratin with smoked herring",
+  "personnes": "2 people",
+  "intro": null,
+  "parties": [
+   {
+    "nom": null,
+    "ingredients": [
+     "450 g potatoes",
+     "200 g smoked herring",
+     "20 cl single cream",
+     "4 onions",
+     "A little fat for cooking",
+     "A few knobs of butter",
+     "Salt, pepper"
+    ],
+    "etapes": [
+     "Peel and slice the onions, then cook them down slowly in a little fat.",
+     "Next, peel the potatoes, cut them into slices about 1.5 cm thick and steam them.",
+     "Finally, put half of the potatoes in an ovenproof dish, then the smoked herring cut into small pieces, cover with the softened onions and finish with the rest of the potatoes.",
+     "Season lightly with pepper and salt. Pour over the cream.",
+     "Dot the top of the potatoes with small pieces of butter so that they brown.",
+     "Bake in a hot oven at 200° for about 20 min."
+    ]
+   }
+  ],
+  "notes": []
  }
 }
