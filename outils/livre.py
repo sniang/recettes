@@ -5,8 +5,8 @@ Lit src/data/recettes.json et les photos de public/photos, puis écrit dans livr
   - « Le livre de cuisine.docx » (sommaire avec liens),
   - « Recettes (une par fichier)/ » : une recette par fichier Word, rangées par catégorie.
 
-Les photos d'illustration (Wikimedia Commons) ne servent que sur le site : le livre ne garde que
-les photos de l'auteur.
+Les recettes sans photo de l'auteur sont illustrées par une photo libre de droits (Wikimedia
+Commons), toujours accompagnée de sa mention : auteur, licence et source.
 
 Utilisation (macOS, polices Georgia du système) :
     python3 -m venv .venv && .venv/bin/pip install -r outils/requirements.txt
@@ -52,8 +52,9 @@ def charger():
     recettes = []
     for r in donnees["recettes"]:
         r = dict(r)
-        r["_photos"] = [(os.path.join(PHOTOS, p["src"]), p["w"], p["h"])
-                        for p in r["photos"] if not p.get("illustration")][:3]
+        r["_photos"] = [(os.path.join(PHOTOS, p["src"]), p["w"], p["h"]) for p in r["photos"]][:3]
+        r["_credits"] = ["Photo d’illustration : %s, %s, via Wikimedia Commons (%s)" % (p["credit"], p["licence"], p["source"])
+                         for p in r["photos"] if p.get("illustration")]
         recettes.append(r)
     recettes.sort(key=lambda r: (CATEGORIES.index(r["categorie"]), rang_groupe(r.get("groupe")), cle_tri(r["titre"])))
     return recettes
@@ -109,6 +110,7 @@ def faire_pdf(recettes, chemin, dossier_temp):
         "ing": ParagraphStyle("i", fontName="G", fontSize=10, leading=13, leftIndent=9, firstLineIndent=-9),
         "etape": ParagraphStyle("e", fontName="G", fontSize=10.5, leading=14.5, leftIndent=18, firstLineIndent=-18, spaceAfter=3.5),
         "intro": ParagraphStyle("in", fontName="G-I", fontSize=10.5, leading=14.5, spaceAfter=6),
+        "credit": ParagraphStyle("cr", fontName="G-I", fontSize=8, leading=10, textColor=DOUX, spaceAfter=6),
         "note": ParagraphStyle("n", fontName="G-I", fontSize=10, leading=13.5, textColor=colors.HexColor("#3d3530"),
                                leftIndent=9, firstLineIndent=-9, spaceAfter=2),
         "cat": ParagraphStyle("c", fontName="G-B", fontSize=34, leading=40, textColor=ACCENT, alignment=TA_CENTER),
@@ -233,7 +235,7 @@ def faire_pdf(recettes, chemin, dossier_temp):
             entete = [p(r["titre"], "titre")]
             st_texte = sous_titre(r)
             entete.append(p(st_texte, "sous") if st_texte else Spacer(1, 8))
-            flux.append(KeepTogether(entete + rangee_photos(r["_photos"], L)))
+            flux.append(KeepTogether(entete + rangee_photos(r["_photos"], L) + [p(c, "credit") for c in r["_credits"]]))
             if r.get("intro"):
                 flux.append(p(r["intro"], "intro"))
             for partie in r["parties"]:
@@ -352,6 +354,9 @@ def outils_word():
                     par.add_run().add_picture(f, height=Cm(haut))
                     if k < len(r["_photos"]) - 1:
                         par.add_run("  ")
+        for c in r["_credits"]:
+            run = d.add_paragraph().add_run(c)
+            run.italic, run.font.size, run.font.color.rgb = True, Pt(8), DOUX
         if r.get("intro"):
             d.add_paragraph().add_run(r["intro"]).italic = True
         for partie in r["parties"]:

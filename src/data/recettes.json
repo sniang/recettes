@@ -7750,7 +7750,17 @@
     "À faire.",
     "Recette tirée d'une coupure de magazine, retapée en résumé."
    ],
-   "photos": [],
+   "photos": [
+    {
+     "src": "maquereaux-marines-illustration.jpg",
+     "w": 844,
+     "h": 335,
+     "illustration": true,
+     "credit": "Xemenendura",
+     "licence": "CC BY-SA 3.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Caballas_con_piri%C3%B1aca_cropped.jpg"
+    }
+   ],
    "coupures": []
   },
   {
@@ -9005,7 +9015,17 @@
    "notes": [
     "En cocotte-minute : 40 minutes."
    ],
-   "photos": [],
+   "photos": [
+    {
+     "src": "ragout-limousin-illustration.jpg",
+     "w": 960,
+     "h": 720,
+     "illustration": true,
+     "credit": "Popdien",
+     "licence": "CC BY-SA 4.0",
+     "source": "https://commons.wikimedia.org/wiki/File:Paul_Kaldereta.jpg"
+    }
+   ],
    "coupures": []
   },
   {

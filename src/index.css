@@ -473,6 +473,12 @@ svg {
   font: italic 0.8rem var(--corps);
 }
 
+.credit {
+  margin: 4px 0 0;
+  font: italic 0.82rem var(--corps);
+  color: var(--doux);
+}
+
 .photos img {
   width: 100%;
   height: auto;

@@ -90,6 +90,16 @@ export default function PageRecette({ recette: r, recettes, langue }) {
             ))}
           </div>
         )}
+        {r.photos
+          .filter((p) => p.illustration)
+          .map((p) => (
+            <p key={p.src} className="credit">
+              {t.credit(p.credit, p.licence)}{' '}
+              <a href={p.source} target="_blank" rel="noreferrer">
+                Wikimedia Commons
+              </a>
+            </p>
+          ))}
 
         {r.intro && <p className="intro">{r.intro}</p>}
 
